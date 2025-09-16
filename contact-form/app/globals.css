@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Agregando tokens de diseño de Microsoft para el portfolio */
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --card: #f3f4f6;
+  --card-foreground: #000000;
+  --popover: #ffffff;
+  --popover-foreground: #000000;
+  --primary: #0078d4;
+  --primary-foreground: #ffffff;
+  --secondary: #6b7280;
+  --secondary-foreground: #ffffff;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+  --accent: #d1e7fd;
+  --accent-foreground: #0078d4;
+  --destructive: #be123c;
+  --destructive-foreground: #ffffff;
+  --border: #e5e7eb;
+  --input: #f3f4f6;
+  --ring: #0078d4;
+  --chart-1: #0078d4;
+  --chart-2: #6b7280;
+  --chart-3: #d1e7fd;
+  --chart-4: #f3f4f6;
+  --chart-5: #ffffff;
+  --radius: 0.5rem;
+  --sidebar: #f3f4f6;
+  --sidebar-foreground: #000000;
+  --sidebar-primary: #0078d4;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #d1e7fd;
+  --sidebar-accent-foreground: #0078d4;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: #0078d4;
+}
+
+body {
+  font-feature-settings: "ss01" on, "ss02" on, "ss03" on, "ss04" on, "ss05" on;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+/* Agregando estilos personalizados para el portfolio */
+.gradient-text {
+  background: linear-gradient(135deg, #0078d4, #40e0d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.skill-bar {
+  background: linear-gradient(90deg, #0078d4, #40e0d0);
+  border-radius: 0.25rem;
+  height: 0.5rem;
+}
